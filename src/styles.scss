@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 h1, p {
   margin: 0;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+a {
+  color: unset;
+  cursor: pointer;
+  text-decoration: none;
 }

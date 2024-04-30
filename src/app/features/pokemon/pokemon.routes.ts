@@ -1,9 +1,19 @@
 import { Routes } from "@angular/router";
-import { PokemonContainerComponent } from "./pokemon-container/pokemon-container.component";
+import { PokemonLayoutComponent } from "./pokemon-layout.component";
 
 export default <Routes>[
   {
     path: '',
-    component: PokemonContainerComponent,
+    component: PokemonLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadComponent: async () => (await import('./pokemon-container.component')).PokemonContainerComponent,
+      },
+      {
+        path: 'pokemon/:id',
+        loadComponent: async () => (await import('./pokemon-details.component')).PokemonDetailsComponent,
+      }
+    ]
   }
 ]
