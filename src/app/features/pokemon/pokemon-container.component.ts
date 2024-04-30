@@ -5,7 +5,7 @@ import { PokemonCardComponent } from './ui/pokemon-card.component';
 @Component({
   selector: 'app-pokemon-container',
   template: `
-    <div class="tw-mt-12 tw-container tw-max-w-5xl tw-mx-auto">
+    <div class="tw-mt-10 tw-container tw-max-w-5xl tw-mx-auto">
       <h1>Brisa - Pokémon</h1>
       <p class="tw-mt-2">An example using View Transition with Brisa</p>
 
