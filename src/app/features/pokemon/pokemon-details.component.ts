@@ -9,18 +9,18 @@ import { RouterLink } from "@angular/router";
     @if (pokemonDetails()) {
       <div class="tw-mt-10 tw-container tw-mx-auto tw-max-w-3xl">
         <div class="tw-text-[#919191] tw-capitalize">
-          <a routerLink="/">Poke</a>
+          <a renderMode="transition" routerLink="/">Poke</a>
           <span> / {{ pokemonDetails()!.type }} / </span>
           <span>{{pokemonDetails()!.id }}</span>
         </div>
 
         <div class="tw-mt-6 tw-mb-10 tw-flex tw-gap-8">
           <div class="tw-cursor-pointer tw-border tw-border-white tw-rounded-lg tw-shadow-md">
-            <img class="tw-w-[375px]" [src]="pokemonDetails()!.image" [alt]="pokemonDetails()!.id">
+            <img style="view-transition-name: {{pokemonDetails()!.id}}-image;" class="tw-w-[375px]" [src]="pokemonDetails()!.image" [alt]="pokemonDetails()!.id">
           </div>
           <div>
-            <h1 class="tw-capitalize">{{ pokemonDetails()!.name }}</h1>
-            <p class="tw-mt-4 tw-leading-6">{{ pokemonDetails()!.description }}</p>
+            <h1 style="view-transition-name: {{pokemonDetails()!.id}}-title;" class="tw-capitalize">{{ pokemonDetails()!.name }}</h1>
+            <p style="view-transition-name: {{pokemonDetails()!.id}}-description;" class="tw-mt-4 tw-leading-6">{{ pokemonDetails()!.description }}</p>
           </div>
         </div>
 
