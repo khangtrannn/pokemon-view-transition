@@ -8,7 +8,7 @@ import { PokemonCardComponent } from './ui/pokemon-card.component';
     <div class="tw-mt-10 tw-container tw-max-w-4xl tw-mx-auto">
       <div class="tw-flex tw-justify-between">
         <div class="tw-flex tw-gap-4 tw-items-center">
-          <img class="tw-h-[50px]" src="/assets/angular-icon.svg" />
+          <img class="tw-h-[50px]" src="assets/angular-icon.svg" />
 
           <div class="tw-h-fit">
             <h1>Brisa - Pokémon</h1>
