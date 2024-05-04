@@ -5,9 +5,15 @@ import { PokemonCardComponent } from './ui/pokemon-card.component';
 @Component({
   selector: 'app-pokemon-container',
   template: `
-    <div class="tw-mt-10 tw-container tw-max-w-5xl tw-mx-auto">
-      <h1>Brisa - Pokémon</h1>
-      <p class="tw-mt-2">An example using View Transition with Brisa</p>
+    <div class="tw-mt-10 tw-container tw-max-w-4xl tw-mx-auto">
+      <div class="tw-flex tw-justify-between">
+        <div>
+          <h1>Brisa - Pokémon</h1>
+          <p class="tw-mt-2">An example using View Transition with Brisa</p>
+        </div>
+
+        <p class="tw-mt-2">Made by <span class="tw-font-semibold">Khang Tran</span> with ❤️</p>
+      </div>
 
       <div class="tw-mt-12 tw-grid tw-gap-6 tw-grid-cols-4">
         @for (pokemon of pokemons(); track pokemon.id) {

@@ -6,9 +6,6 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   template: `
     <router-outlet />
-    <div class="tw-absolute tw-flex tw-bottom-[30px] tw-w-full tw-justify-center">
-      <p>Made by <span class="tw-font-semibold">Khang Tran</span> with ❤️</p>
-    </div>
   `,
   imports: [RouterOutlet],
 })

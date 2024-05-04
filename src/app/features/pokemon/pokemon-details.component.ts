@@ -7,7 +7,7 @@ import { RouterLink } from "@angular/router";
   selector: 'app-pokemon-details',
   template: `
     @if (pokemonDetails()) {
-      <div class="tw-mt-10 tw-container tw-mx-auto tw-max-w-3xl">
+      <div class="tw-mt-10 tw-container tw-mx-auto tw-max-w-2xl">
         <div class="tw-text-[#919191] tw-capitalize">
           <a routerLink="/">Poke</a>
           <span> / {{ pokemonDetails()!.type }} / </span>
@@ -16,7 +16,7 @@ import { RouterLink } from "@angular/router";
 
         <div class="tw-mt-6 tw-mb-10 tw-flex tw-gap-8">
           <div class="tw-cursor-pointer tw-border tw-border-white tw-rounded-lg tw-shadow-md">
-            <img [style.viewTransitionName]="pokemonDetails()!.id + '-image'" class="tw-w-[375px]" [src]="pokemonDetails()!.image" [alt]="pokemonDetails()!.id">
+            <img [style.viewTransitionName]="pokemonDetails()!.id + '-image'" class="tw-w-[300px]" [src]="pokemonDetails()!.image" [alt]="pokemonDetails()!.id">
           </div>
           <div>
             <h1 class="tw-capitalize">{{ pokemonDetails()!.name }}</h1>
