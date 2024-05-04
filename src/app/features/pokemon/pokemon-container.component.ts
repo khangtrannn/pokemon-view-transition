@@ -12,7 +12,7 @@ import { PokemonCardComponent } from './ui/pokemon-card.component';
           <p class="tw-mt-2">An example using View Transition with Brisa</p>
         </div>
 
-        <p class="tw-mt-2">Made by <span class="tw-font-semibold">Khang Tran</span> with ❤️</p>
+        <p style="view-transition-name: author;" class="tw-mt-2">Made with ❤️ by <span class="tw-font-semibold tw-italic">Khang Tran</span>️</p>
       </div>
 
       <div class="tw-mt-12 tw-grid tw-gap-6 tw-grid-cols-4">

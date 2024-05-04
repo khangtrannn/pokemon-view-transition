@@ -18,9 +18,13 @@ import { RouterLink } from "@angular/router";
           <div class="tw-cursor-pointer tw-border tw-border-white tw-rounded-lg tw-shadow-md">
             <img [style.viewTransitionName]="pokemonDetails()!.id + '-image'" class="tw-w-[300px]" [src]="pokemonDetails()!.image" [alt]="pokemonDetails()!.id">
           </div>
-          <div>
-            <h1 class="tw-capitalize">{{ pokemonDetails()!.name }}</h1>
-            <p class="tw-mt-4 tw-leading-6">{{ pokemonDetails()!.description }}</p>
+          <div class="tw-flex tw-flex-col tw-justify-between">
+            <div>
+              <h1 class="tw-capitalize">{{ pokemonDetails()!.name }}</h1>
+              <p class="tw-mt-4 tw-leading-6">{{ pokemonDetails()!.description }}</p>
+            </div>
+
+            <p style="view-transition-name: author;">Made with ❤️ by <span class="tw-font-semibold tw-italic">Khang Tran</span>️</p>
           </div>
         </div>
 
