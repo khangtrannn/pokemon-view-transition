@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "ghpages:deploy": "ng deploy --base-href=/pokemon-view-transition/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
